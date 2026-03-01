@@ -25,7 +25,7 @@ livereload
 ## Просмотр онлайн
 
 Для просотра работы плеера онлайн - Вы можете перейти по ссылке [https://leomclucky.github.io/dvmn-py_Advanced_layout_in_Django-01-LF/](https://himas1321.github.io/advanced_django_layout/)
-
+![demo.png](demo.png)
 ## Цели проекта
 
 Код написан в учебных целях — это урок в курсе по Python и веб-разработке на сайте [Devman](https://dvmn.org).
