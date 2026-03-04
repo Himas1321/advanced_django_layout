@@ -5,6 +5,7 @@
     <title>Проверка плеера</title>
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <style>
         .player-box {
@@ -41,10 +42,20 @@
             color: white;
             font-size: 17px;
         }
+        
+        .time {
+            color: white;
+            font-size: 14px;
+        }
 
-        .spacer {
+        .timer-left {
+            margin-left: 10px;
+        }
+
+        .progress {
             flex-grow: 1;
         }
+
     </style>
 
 </head>
@@ -66,6 +77,13 @@
             <button class="js-volume-button control-button" hidden>
                 <i class="fa fa-volume-off control-icon" aria-hidden="true"></i>
             </button>
+            <div class="timer-left">
+                <span class="js-current-time time">0:00</span>
+            </div>
+            <div class="progress"></div>
+            <div class="timer-right">
+                <span class="js-duration time">0:00</span>
+            </div>
             <div class="spacer"></div>
             <button class="js-fullscreen-button control-button">
                 <i class="fa fa-expand control-icon" aria-hidden="true"></i>
