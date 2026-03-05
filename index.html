@@ -26,7 +26,7 @@
             align-items: center;
             background: black;
             padding: 6px;
-            gap: 8px;
+
         }
 
         .control-button {
@@ -42,18 +42,59 @@
             color: white;
             font-size: 17px;
         }
-        
+
+        .js-mute-button {
+            margin-left: 8px;
+        }
+
         .time {
             color: white;
-            font-size: 14px;
+            font-size: 17px;
         }
 
         .timer-left {
             margin-left: 10px;
         }
 
+        .timer-right {
+            margin-left: auto;
+        }
+
         .progress {
+            background: #444;
+            height: 6px;
             flex-grow: 1;
+            margin: 0 12px;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .progress-slider {
+            background: red;
+            height: 100%;
+            width: 0%;
+            border-radius: 5px;
+        }
+
+        .slider {
+            width: 12px;
+            height: 12px;
+            background: red;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-right: -8px;
+        }
+
+        .progress-slider {
+            background: red;
+            height: 100%;
+            width: 0%;
+            border-radius: 2px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
 
     </style>
@@ -80,7 +121,10 @@
             <div class="timer-left">
                 <span class="js-current-time time">0:00</span>
             </div>
-            <div class="progress"></div>
+            <div class="js-progress progress">
+                <div class="js-progress-slider progress-slider"></div>
+                <div class="slider"></div>
+            </div>
             <div class="timer-right">
                 <span class="js-duration time">0:00</span>
             </div>
